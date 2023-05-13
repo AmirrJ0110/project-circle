@@ -97,7 +97,7 @@ body {
     transform: translate(500px, 285px) scaleX(1) scaleY(1);
   }
   35% {
-    transform: translate(500px, 310px) scaleX(1.4) scaleY(0.4);
+    transform: translate(500px, 300px) scaleX(1.3) scaleY(0.7);
   }
   /* jump2 */
   40% {
@@ -107,7 +107,7 @@ body {
     transform: translate(700px, 285px) scaleX(1) scaleY(1);
   }
   55% {
-    transform: translate(700px, 310px) scaleX(1.5) scaleY(0.5);
+    transform: translate(700px, 300px) scaleX(1.1) scaleY(0.6);
   }
   /* jump3  */
   60% {
@@ -117,7 +117,7 @@ body {
     transform: translate(900px, 280px) scaleX(1) scaleY(1);
   }
   75% {
-    transform: translate(900px, 290px) scaleX(1.4) scaleY(0.9);
+    transform: translate(900px, 290px) scaleX(1.2) scaleY(0.9);
   }
   /* jump4   */
   85% {
@@ -140,7 +140,7 @@ body {
   }
 }
 .container > .game:hover > .ball {
-  animation: ball 6s 1;
+  animation: ball 4s 1;
 }
 
 /* 100% {
