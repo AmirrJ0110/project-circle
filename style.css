@@ -1,21 +1,21 @@
 /* CSS START */
 
 /* Body background Start */
-body{
-    background: linear-gradient(to right,#242582,#F64C72,#99738E );
-    background-size: 400% 400%;
-    animation: backgroundbody 4s infinite;
+body {
+  background: linear-gradient(to right, #000000, #ffffff, #000000);
+  background-size: 400% 400%;
+  animation: backgroundbody 4s infinite;
 }
 
 /* Keyframe backgrond Start */
-@keyframes backgroundbody{
-  0%{
+@keyframes backgroundbody {
+  0% {
     background-position: 0% 50%;
   }
-  50%{
+  50% {
     background-position: 100% 50%;
   }
-  100%{
+  100% {
     background-position: 0% 50%;
   }
 }
@@ -24,150 +24,141 @@ body{
 /* Body background End */
 
 /* Text on the page Start */
-.parent h1{
-    font-size: 3.5em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: poppins;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    background-image: linear-gradient(#fff, #fff);
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-position: -1700px 0;
-    animation: text 5s linear infinite alternate;
-    
+.parent h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: poppins;
+  -webkit-text-stroke: 1px #ffffff;
+  color: transparent;
+  background-image: linear-gradient(#fff, #fff);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -1700px 0;
+  animation: text 5s linear infinite alternate;
 }
 /* Keyframe text Start */
-@keyframes text{
-    100%{
-        background-position: 0 0;
-    }
+@keyframes text {
+  100% {
+    background-position: 0 0;
+  }
 }
 /* Keyframes text END */
 
 /* Text on the page End */
 
 /* Border Around the ball start */
-.game{
-    border: 10px solid #997383;
-    border-radius: 10px;
-    height: 840px;
-    overflow: hidden;
+.game {
+  background-color: #ffffff;
+  margin: 0 auto;
+  width: 1300px;
+  border: 10px solid #000000;
+  border-radius: 10px;
+  height: 425px;
 }
 /* Border Around the ball END */
 
-
 /* BALL MOVEMENTS START */
-.ball{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin-top: 70px;
-    margin-left: 70px;
-    background: linear-gradient(to right,#99738E,#2F2FA2);
-    animation: ball 20s;
+.ball {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-top: 70px;
+  margin-left: 70px;
+  background: url(images/ball.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Ball hover start */
-.ball:hover{
-    animation-play-state: paused;
-}
+
 /* Ball hover end */
 
 /* Keyframe ball Start */
-@keyframes ball{
-  
+@keyframes ball {
+  0% {
+  }
+  10% {
+    transform: translate(180px, 0px) scalex(1);
+  }
+  13% {
+    transform: translate(290px, 285px) scaleX(1) scaleY(1);
+  }
+  14% {
+    transform: translate(290px, 310px) scaleX(1.5) scaleY(0.5);
+  }
 
- 10%{
-    transform: translate(180px,0px) rotate(360deg);
-    height: 80px;
-   }
+  /* jump1 */
+  20% {
+    transform: translate(400px, 70px) scaleX(1) scaleY(1);
+  }
+  34% {
+    transform: translate(500px, 285px) scaleX(1) scaleY(1);
+  }
+  35% {
+    transform: translate(500px, 300px) scaleX(1.3) scaleY(0.7);
+  }
+  /* jump2 */
+  40% {
+    transform: translate(600px, 120px) scaleX(1) scaleY(1);
+  }
+  54% {
+    transform: translate(700px, 285px) scaleX(1) scaleY(1);
+  }
+  55% {
+    transform: translate(700px, 300px) scaleX(1.1) scaleY(0.6);
+  }
+  /* jump3  */
+  60% {
+    transform: translate(800px, 200px) scaleX(1) scaleY(1);
+  }
+  74% {
+    transform: translate(900px, 280px) scaleX(1) scaleY(1);
+  }
+  75% {
+    transform: translate(900px, 290px) scaleX(1.2) scaleY(0.9);
+  }
+  /* jump4   */
+  85% {
+    transform: translate(1000px, 230px) scaleX(1) scaleY(1);
+  }
+  94% {
+    transform: translate(1100px, 290px) scaleX(1) scaleY(1);
+  }
+  95% {
+    transform: translate(1100px, 290px) scaleX(1) scaleY(1);
+  }
+  96% {
+    opacity: 1;
+  }
 
-   15%{
-    transform: translate(300px,700px);
-    height: 65px;
-   
-   }
+  100% {
+    transform: translate(1150px, 290px);
 
-   20%{
-    transform: translate(460px,10px);
-    height: 80px;
-   }
-
-   25%{
-    transform: translate(600px,700px);
-    height: 68px;
-   }
-
-   30%{
-    transform: translate(750px,100px);
-    height: 80px;
-   }
-
-   35%{
-    transform: translate(900px,700px);
-    height: 71px;
-   }
-
-   40%{
-    transform: translateX(1060px) translateY(200px);
-    height: 80px;
-   }
-
-    45%{
-        transform: translate(1200px,700px);
-        height: 72px;
-    }
-
-
-    50%{
-        transform: translate(1300px,400px);
-        height: 80px;
-    }
-
-    55%{
-        transform: translateX(1460px) translateY(700px);
-        height: 70px;
-    }
-
-    60%{
-        transform: translate(1560px,500px);
-        height: 80px;
-    }
-
-    65%{
-        transform: translate(1700px,700px);
-        height: 71px;
-    }  
-
-    70%{
-        transform: translate(1800px,600px);
-        height: 77px;
-    }
-
-    75%{
-        transform: translate(1840px,698px);
-         height: 80px;       
-
-    }
-
+    opacity: 0;
+  }
 }
+.container > .game:hover > .ball {
+  animation: ball 4s 1;
+}
+
+/* 100% {
+      transform: translate(700px, 290px);
+    } */
+
 /* Keyframe ball END */
 
 /* BALL MOVEMENTS END */
 
-
 /* Ball Holder Start */
-.square{
-    width: 190px;
-    height: 20px;
-    margin-left: 80px;
-    margin-top: 1px;
-    background-color:#ffffff;
+.square {
+  width: 170px;
+  height: 20px;
+  margin-left: 80px;
+  margin-top: 1px;
+  background-color: #010101;
 }
 /* Ball Holder End */
 
 /* CSS END */
-
-
