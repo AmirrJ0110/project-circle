@@ -2,7 +2,7 @@
 
 /* Body background Start */
 body {
-  background: linear-gradient(to right, #000000, #ffffff, #000000);
+  background: linear-gradient(to right, #000000, #000000, #000000);
   background-size: 400% 400%;
   animation: backgroundbody 4s infinite;
 }
@@ -32,7 +32,7 @@ body {
   font-family: poppins;
   -webkit-text-stroke: 1px #ffffff;
   color: transparent;
-  background-image: linear-gradient(#fff, #fff);
+  background-image: linear-gradient(#ff0000, #ff0000);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -1700px 0;
@@ -50,12 +50,16 @@ body {
 
 /* Border Around the ball start */
 .game {
-  background-color: #ffffff;
+  background: url(images/2.gif) no-repeat, url(images/1.gif);
+  background-size: 40%;
+
+  background-position: center;
   margin: 0 auto;
   width: 1300px;
-  border: 10px solid #000000;
+  border: 10px solid #ffffff;
   border-radius: 10px;
   height: 425px;
+  box-shadow: 0 0 50px white;
 }
 /* Border Around the ball END */
 
@@ -70,6 +74,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 0 50px white;
 }
 /* Ball hover start */
 
@@ -124,10 +129,10 @@ body {
     transform: translate(1000px, 230px) scaleX(1) scaleY(1);
   }
   94% {
-    transform: translate(1100px, 290px) scaleX(1) scaleY(1);
+    transform: translate(1100px, 280px) scaleX(1) scaleY(1);
   }
   95% {
-    transform: translate(1100px, 290px) scaleX(1) scaleY(1);
+    transform: translate(1100px, 285px) scaleX(1) scaleY(1);
   }
   96% {
     opacity: 1;
