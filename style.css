@@ -56,10 +56,9 @@ body {
 
 /* Border Around the ball start */
 .game {
-  background: url(images/2.gif) no-repeat, url(images/1.gif) no-repeat,
-    url(images/1.gif);
+  background: url(images/2.gif) no-repeat, url(images/54.gif);
 
-  background-position: top 600px;
+  background-position: top;
   background-size: 20%;
 
   margin: 0 auto;
@@ -180,7 +179,7 @@ body {
   height: 20px;
   margin-left: 80px;
   margin-top: 1px;
-  background-color: #010101;
+  background-color: #000000;
 }
 /* Ball Holder End */
 
