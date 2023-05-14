@@ -1,10 +1,14 @@
 /* CSS START */
+* {
+  margin: 0;
+}
 
 /* Body background Start */
 body {
   background: linear-gradient(to right, #000000, #000000, #000000);
   background-size: 400% 400%;
   animation: backgroundbody 4s infinite;
+  margin: 0;
 }
 
 /* Keyframe backgrond Start */
@@ -24,18 +28,20 @@ body {
 /* Body background End */
 
 /* Text on the page Start */
-.parent h1 {
-  font-size: 3.5em;
+.parent p {
+  font-size: 60px;
+  font-weight: 500;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-family: poppins;
   -webkit-text-stroke: 1px #ffffff;
   color: transparent;
-  background-image: linear-gradient(#ff0000, #ff0000);
+  background-image: linear-gradient(#ffffff, #ffffff);
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -1700px 0;
+  text-shadow: 0 0 10px white;
   animation: text 5s linear infinite alternate;
 }
 /* Keyframe text Start */
@@ -178,4 +184,99 @@ body {
 }
 /* Ball Holder End */
 
+/* Name Amir Light Start  */
+.names {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  color: #353535;
+  font-size: 60px;
+  margin-top: 50px;
+  border: 10px solid rgb(148, 148, 148);
+  border-right: 10px solid rgb(255, 255, 255);
+  border-left: 10px solid rgb(255, 255, 255);
+  border-bottom: 10px dashed white;
+  border-top: 10px dashed white;
+  box-shadow: 0 0 50px white;
+}
+
+h1 span,
+h2 span,
+h3 span {
+  display: table-cell;
+  margin: 0px;
+  padding: 20px;
+  animation: animate 5s ease-in-out infinite;
+}
+h1 span:nth-child(1),
+h2 span:nth-child(1),
+h3 span:nth-child(1) {
+  animation-delay: 0s;
+}
+h1 span:nth-child(2),
+h2 span:nth-child(2),
+h3 span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+h1 span:nth-child(3),
+h2 span:nth-child(3),
+h3 span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+h1 span:nth-child(4),
+h2 span:nth-child(4),
+h3 span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+h1 span:nth-child(5),
+h2 span:nth-child(5),
+h3 span:nth-child(5) {
+  animation-delay: 1s;
+}
+h1 span:nth-child(6),
+h2 span:nth-child(6),
+h3 span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    color: #fff;
+    filter: blur(2px);
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px#ffffff,
+      0 0 80px #ffffff, 0 0 120px #ffffff, 0 0 200px #ffffff;
+  }
+  5%,
+  95% {
+    color: #111;
+    filter: blur(0px);
+    text-shadow: none;
+  }
+  10%,
+  70% {
+    color: #ffffff;
+    filter: blur(0px);
+    text-shadow: none;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px#ffffff,
+      0 0 80px #ffffff, 0 0 120px #ffffff, 0 0 200px #ffffff;
+  }
+  50%,
+  60% {
+    color: #ffffff;
+    filter: blur(0px);
+    text-shadow: none;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px#ffffff,
+      0 0 80px #ffffff, 0 0 120px #ffffff, 0 0 200px #ffffff;
+  }
+}
+/* Name Amir Light End */
 /* CSS END */
