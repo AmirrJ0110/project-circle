@@ -50,10 +50,12 @@ body {
 
 /* Border Around the ball start */
 .game {
-  background: url(images/2.gif) no-repeat, url(images/1.gif);
-  background-size: 40%;
+  background: url(images/2.gif) no-repeat, url(images/1.gif) no-repeat,
+    url(images/1.gif);
 
-  background-position: center;
+  background-position: top 600px;
+  background-size: 20%;
+
   margin: 0 auto;
   width: 1300px;
   border: 10px solid #ffffff;
