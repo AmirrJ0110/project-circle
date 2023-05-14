@@ -42,8 +42,6 @@ body {
 .game {
   position: relative;
   margin: 0 auto;
-  background: url(images/star.gif);
-
   width: 1800px;
   border: 10px solid #ffffff;
   border-radius: 10px;
