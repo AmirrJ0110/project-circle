@@ -5,7 +5,7 @@
 
 /* Body background Start */
 body {
-  background-color: #2e2d2d;
+  background-color: #000000;
   margin: 0;
 }
 
@@ -42,8 +42,8 @@ body {
 .game {
   position: relative;
   margin: 0 auto;
-  background-color: #000000;
-  background-position: 50% 150%;
+  background: url(images/star.gif);
+
   width: 1800px;
   border: 10px solid #ffffff;
   border-radius: 10px;
