@@ -175,7 +175,7 @@ body {
     transform: translateX(1460px) translateY(710px) scaleX(1.1) scaleY(0.7);
     height: 70px;
   }
-  /* jump5 */
+
   60% {
     transform: translate(1650px, 710px);
     height: 80px;
@@ -211,14 +211,11 @@ body {
     opacity: 0;
   }
 }
-
+/* .container > .game:hover > .ball start */
 .container > .game:hover > .ball {
   animation: ball 13s linear 1;
 }
-
-/* 100% {
-      transform: translate(700px, 290px);
-    } */
+/* .container > .game:hover > .ball end */
 
 /* Keyframe ball END */
 
@@ -241,6 +238,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
+/* H1 H2 H3 start */
 h1,
 h2,
 h3 {
@@ -256,7 +254,8 @@ h3 {
   border-top: 10px dashed white;
   box-shadow: 0 0 50px white;
 }
-
+/* H1 H2 H3 End */
+/* H1 Span H2 Span H3 Span Start */
 h1 span,
 h2 span,
 h3 span {
@@ -265,6 +264,7 @@ h3 span {
   padding: 20px;
   animation: animate 5s ease-in-out infinite;
 }
+/* H1 Span H2 Span H3 Span End */
 h1 span:nth-child(1),
 h2 span:nth-child(1),
 h3 span:nth-child(1) {
@@ -295,7 +295,7 @@ h2 span:nth-child(6),
 h3 span:nth-child(6) {
   animation-delay: 1.25s;
 }
-
+/* Keyframe Animate Start */
 @keyframes animate {
   0%,
   100% {
@@ -327,5 +327,6 @@ h3 span:nth-child(6) {
       0 0 80px #ffffff, 0 0 120px #ffffff, 0 0 200px #ffffff;
   }
 }
+/* Keyframe Animate End */
 /* Name Amir Light End */
 /* CSS END */
