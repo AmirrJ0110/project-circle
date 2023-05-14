@@ -74,7 +74,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0 0 50px white;
+  border: 2px solid black;
+  box-shadow: 0 0 50px rgb(0, 0, 0), inset 0 0 20px black;
 }
 /* Ball hover start */
 
@@ -128,24 +129,33 @@ body {
   85% {
     transform: translate(1000px, 230px) scaleX(1) scaleY(1);
   }
-  94% {
-    transform: translate(1100px, 280px) scaleX(1) scaleY(1);
+  90% {
+    transform: translate(1050px, 280px) scaleX(1) scaleY(1);
   }
   95% {
-    transform: translate(1100px, 285px) scaleX(1) scaleY(1);
+    transform: translate(1050px, 285px) scaleX(1.1) scaleY(0.9);
   }
   96% {
     opacity: 1;
   }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
 
   100% {
-    transform: translate(1150px, 290px);
+    transform: translate(1170px, 290px);
 
     opacity: 0;
   }
 }
 .container > .game:hover > .ball {
-  animation: ball 4s 1;
+  animation: ball 4s linear 1;
 }
 
 /* 100% {
